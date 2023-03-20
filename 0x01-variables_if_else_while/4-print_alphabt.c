@@ -12,12 +12,10 @@ int main(void)
 	{
 		if (alpha == 'e')
 		{
-			alpha++;
 			continue;
 		}
 		else if (alpha == 'q')
 		{
-			alpha++;
 			continue;
 		}
 		else
