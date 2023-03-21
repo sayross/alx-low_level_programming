@@ -6,7 +6,7 @@
  * Return: n if + or 0, -n if -
  */
 
-int _abs(int n);
+int _abs(int n)
 {
 	if (n < 0)
 	{
