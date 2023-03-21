@@ -17,16 +17,16 @@ void jack_bauer(void)
 		j = 0;
 		while (j <= 9)
 		{
+			if (i == 2 && j == 4)
+			{
+				break;
+			}
 			k = 0;
 			while (k <= 5)
 			{
 				l = 0;
 				while (l <= 9)
 				{
-					if (i == 2 && j == 4)
-					{
-						break;
-					}
 					_putchar(i + 48);
 					_putchar(j + 48);
 					_putchar(':');
