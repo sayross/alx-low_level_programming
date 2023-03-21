@@ -22,7 +22,7 @@ int main(void)
 				p = 48;
 				while (p <= 57)
 				{
-					if (((n - 48) * 10 + m) < ((o - 48) * 10 + p))
+					if ((n - 48) * 10 + m < (o - 48) * 10 + p)
 					{
 						putchar(n);
 						putchar(m);
@@ -31,8 +31,8 @@ int main(void)
 						putchar(p);
 						if (n + m + o + p != 227)
 						{
-							putchar(' ');
 							putchar(',');
+							putchar(' ');
 						}
 					}
 					p++;
