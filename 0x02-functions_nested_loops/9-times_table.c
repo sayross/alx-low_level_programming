@@ -17,9 +17,13 @@ void times_table(void)
 		while (j <= 9)
 		{
 			p = i * j;
-			if (p <= 9)
+			if (p <= 9 && j != 0)
 			{
 				_putchar(' ');
+				_putchar(p + 48);
+			}
+			else if (p <= 9 && j == 0)
+			{
 				_putchar(p + 48);
 			}
 			else
