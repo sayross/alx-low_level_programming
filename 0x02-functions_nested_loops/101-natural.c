@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
-  * sumofmultiples_3_5 - prints the sum of all the multiples of 3 or 5 < 1024
+  * main - prints the sum of all the multiples of 3 or 5 < 1024
   *
-  * Return: void
+  * Return: Always 0 (Success)
   */
-void sumofmultiples_3_5(void)
+
+int main(void)
 {
 	int i = 0;
 	int sum = 0;
@@ -18,4 +19,5 @@ void sumofmultiples_3_5(void)
 		i++;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
