@@ -13,7 +13,7 @@ int main(void)
 	long int f;
 
 	printf("1, 2");
-	for (i == 1; i <= 48; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		f = N1 + N2;
 		N1 = N2;
