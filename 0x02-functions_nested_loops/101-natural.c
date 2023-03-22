@@ -3,7 +3,7 @@
 /**
   * sumofmultiples_3_5 - prints the sum of all the multiples of 3 or 5 < 1024
   *
-  * Return: void
+  * Return: Always 0 (Success)
   */
 int sumofmultiples_3_5(void)
 {
@@ -19,4 +19,5 @@ int sumofmultiples_3_5(void)
 		i++;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
