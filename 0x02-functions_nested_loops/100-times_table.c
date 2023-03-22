@@ -38,7 +38,7 @@ void print_times_table(int n)
 					_putchar((i * j) / 10 + 48);
 					_putchar(((i * j) % 10) + 48);
 				}
-				else
+				else if ((i * j) <= 225 && (i * j) >= 100)
 				{
 					_putchar(',');
 					_putchar(' ');
