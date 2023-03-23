@@ -9,7 +9,7 @@ include "main.h"
 
 int _isdigit(int c)
 {
-	if (c <= 57 && c >= 48)
+	if (c <= 9 && c >= 0))
 	{
 		return (1);
 	}
