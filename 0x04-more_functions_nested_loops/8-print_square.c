@@ -23,7 +23,7 @@ void print_square(int size)
 			j = 1;
 			while (j <= n)
 			{
-				_putchar(35);
+				_putchar('#');
 				j++;
 			}
 			_putchar ('\n');
