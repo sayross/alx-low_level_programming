@@ -29,7 +29,7 @@ void print_triangle(int size)
 			{
 				_putchar('#');
 			}
-			_putchat('\n');
+			_putchar('\n');
 		}
 	}
 
