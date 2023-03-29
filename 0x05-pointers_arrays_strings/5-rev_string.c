@@ -22,5 +22,6 @@ void rev_string(char *s)
 		r = *(s + j);
 		*(s + j) = *(s + l - j - 1);
 		*(s + l - j - 1) = r;
+		j++;
 	}
 }
