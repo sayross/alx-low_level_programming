@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcpy - copies the string including the terminating null byte (\0), to the buffer
+ * *_strcpy - copies the string to the buffer
  * @dest: buffer
  * @src: string
  * Return: dest
@@ -18,7 +18,7 @@ char *_strcpy(char *dest, char *src)
 		l = l + 1;
 		i++;
 	}
-	for (j = 0; j <= l; j ++)
+	for (j = 0; j <= l; j++)
 	{
 		*(dest + j) = *(src + j);
 	}
