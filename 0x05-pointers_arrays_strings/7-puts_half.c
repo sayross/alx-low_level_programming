@@ -9,11 +9,13 @@
 void puts_half(char *str)
 {
 	int i;
+	int j = 0;
 	int l = 0;
 
-	while (*str != '\0')
+	while (*(str + j) != '\0')
 	{
 		l = l + 1;
+		j++;
 	}
 	if (l % 2 == 0)
 	{
