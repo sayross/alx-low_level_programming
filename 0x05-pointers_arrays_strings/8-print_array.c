@@ -12,10 +12,20 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	printf("%d", *a);
-	for (i = 1; i <= n - 1; i++)
+	if (n >= 1)
 	{
-		printf(", %d", *(a + i));
+		if (n = 1)
+		{
+			printf("%d", *a);
+		}
+		else
+		{
+			printf("%d", *a);
+			for (i = 1; i <= n - 1; i++)
+			{
+				printf(", %d", *(a + i));
+			}
+			printf("\n");
+		}
 	}
-	printf("\n");
 }
