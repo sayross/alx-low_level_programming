@@ -19,9 +19,10 @@ void rev_string(char *s)
 	}
 	while (j < l)
 	{
+		l--;
 		r = *(s + j);
-		*(s + j) = *(s + l - j - 1);
-		*(s + l - j - 1) = r;
+		*(s + j) = *(s + l);
+		*(s + l) = r;
 		j++;
 	}
 }
