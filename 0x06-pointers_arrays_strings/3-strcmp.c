@@ -17,11 +17,11 @@ int _strcmp(char *s1, char *s2)
 		if (*(s1 + i) != *(s2 + i))
 		{
 			c = *(s1 + i) - *(s2 + i);
+			return (c);
 		}
 		else
 		{
-			c = 0;
+			return (0);
 		}
 	}
-	return (c);
 }
