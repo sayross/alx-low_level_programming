@@ -17,8 +17,9 @@ char *cap_string(char *s)
 		for (l = 0; l < 13; l++)
 		{
 			if (*(s + i) == *(spc + l) && *(s + i + 1) <= 122 && *(s + i + 1) >= 97)
-		{
+			{
 			*(s + i + 1) = *(s + i + 1) - 32;
+			}
 		}
 	}
 	return (s);
