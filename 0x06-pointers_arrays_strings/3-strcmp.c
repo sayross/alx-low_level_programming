@@ -14,8 +14,12 @@ int _strcmp(char *s1, char *s2)
 
 	while (*(s1 + i) = *(s2 + i))
 	{
+		if (*(s1 + i) = '\0')
+		{
+			break;
+		}
 		i++;
 	}
-	c = '*(s1 + i)' - '*(s2 + i)';
+	c = *(s1 + i) - *(s2 + i);
 	return (c);
 }
