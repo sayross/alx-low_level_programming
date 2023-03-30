@@ -6,21 +6,17 @@
  * Return: string
  */
 
-char *string_toupper(char *s);
+char *string_toupper(char *str);
 {
 	int i;
 	int l = 0;
 
-	while (*(s + l) != '\0')
+	for (i = 0; *(str + i) != '\0'; i++)
 	{
-		l++;
-	}
-	for (i = 0; i < l; i++)
-	{
-		if (*(s + i) <= 122 && *(s + i) >= 97)
+		if (*(str + i) <= 122 && *(str + i) >= 97)
 		{
-			*(s + i) = *(s + i) - 32;
+			*(str + i) = *(str + i) - 32;
 		}
 	}
-	return (s);
+	return (str);
 }
