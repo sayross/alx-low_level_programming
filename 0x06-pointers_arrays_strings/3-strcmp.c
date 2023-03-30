@@ -23,5 +23,6 @@ int _strcmp(char *s1, char *s2)
 			break;
 		}
 	}
-	return (*(s1 + i) - *(s2 + i));
+	c = *(s1 + i) - *(s2 + i);
+	return (c);
 }
