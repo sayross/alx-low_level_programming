@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	while (i <= n && *(src + i) != '\0')
 	{
-		*(dest l1 + i) = *(src + i);
+		*(dest + l1 + i) = *(src + i);
 		i++;
 	}
 	return (dest);
