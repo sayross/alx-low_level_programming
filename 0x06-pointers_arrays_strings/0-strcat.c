@@ -12,7 +12,6 @@ char *_strcat(char *dest, char *src)
 	int l1 = 0;
 	int l2 = 0;
 	int i;
-	int j;
 
 	while (*(dest + l1) != '\0')
 	{
@@ -22,13 +21,9 @@ char *_strcat(char *dest, char *src)
 	{
 		l2++;
 	}
-	for (i = 0; i < l1; i++)
+	for (i = l1; i < l1 + l2; i++)
 	{
-		_putchar(*(dest + i));
-	}
-	for (j = 0; j <= l2; j++)
-	{
-		_putchar(*(src + j));
+		*(dest + i) = *(src + i - l1);
 	}
 	return (dest);
 }
