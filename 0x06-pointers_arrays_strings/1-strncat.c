@@ -5,7 +5,7 @@
   * @src: first string
   * @dest: second string
   * @n: number of src char
-  * Return: pointer to dest
+  * Return: dest
   */
 
 char *_strncat(char *dest, char *src, int n)
