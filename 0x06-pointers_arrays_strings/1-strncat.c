@@ -22,6 +22,6 @@ char *_strncat(char *dest, char *src, int n)
 		*(dest + l1 + i) = *(src + i);
 		i++;
 	}
-	*(dest + c + i) = '\0';
+	*(dest + l1 + i) = '\0';
 	return (dest);
 }
