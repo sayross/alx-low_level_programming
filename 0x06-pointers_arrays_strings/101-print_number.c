@@ -17,7 +17,7 @@ void print_number(int n)
 	}
 	if (n < 10)
 	{
-		_putchar(n + 48)
+		_putchar(n + 48);
 	}
 	while (i <= 10)
 	{
@@ -27,5 +27,5 @@ void print_number(int n)
 		}
 		i = i / 10;
 	}
-	_putchar ((n % 10) + 48);
+	_putchar((n % 10) + 48);
 }
