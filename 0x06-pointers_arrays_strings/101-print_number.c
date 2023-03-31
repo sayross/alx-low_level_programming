@@ -8,24 +8,16 @@
 
 void print_number(int n)
 {
-	int i = 1000000000;
+	unsigned int num = n
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n = n * (-1);
+		num = -num
 	}
-	if (n < 10)
+	if ((num / 10) > 0)
 	{
-		_putchar(n + 48);
+		print_number(num / 10);
 	}
-	while (i <= 10)
-	{
-		if (i <= n)
-		{
-			_putchar(((n / i) % 10) + 48);
-		}
-		i = i / 10;
-	}
-	_putchar((n % 10) + 48);
+	_putchar((num % 10) + 48);
 }
