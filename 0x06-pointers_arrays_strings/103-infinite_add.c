@@ -62,11 +62,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		}
 		r[k] = (N1 + N2 + d) % 10 + 48;
 		d = (N1 + N2 + d) / 10;
-		k++;
 	}
 	if (d == 1)
 	{
-		r[l + 1] = 0;
+		r[l + 1] = '\0';
 		if (size_r < l + 2)
 		{
 			return (0);
