@@ -4,7 +4,7 @@
  * *_memset - fills memory with a constant byte
  * @s: memory aera
  * @n: first n bytes
- * @b constant byte
+ * @b: constant byte
  * Return: pointer to s
  */
 
