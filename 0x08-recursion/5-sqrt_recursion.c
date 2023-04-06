@@ -25,11 +25,9 @@ int square(int x, int y)
 	{
 		return (y);
 	}
-	if (y * y < x)
-	{
-		return (square(x, y + 1));
-	}
-	else
+	if (y * y > x)
 	{
 		return (-1);
+	}
+	return (square(x, y + 1));
 }
