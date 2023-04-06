@@ -34,5 +34,5 @@ int test(int n, int i)
 	{
 		return (0);
 	}
-	test(n, i - 1);
+	return (test(n, i - 1));
 }
