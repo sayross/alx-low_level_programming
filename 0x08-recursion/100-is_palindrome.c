@@ -58,7 +58,11 @@ int check(char *s, int l, int r)
 
 int length(char *s)
 {
-	if (*s != '\0')
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
 	{
 		return (length(s + 1) + 1);
 	}
