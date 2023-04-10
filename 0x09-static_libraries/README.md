@@ -1,0 +1,2 @@
+README File
+Static libraries
