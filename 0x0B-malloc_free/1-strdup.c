@@ -7,7 +7,7 @@
  * Return: pointer to the newly allocated space in memory
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int size = 0;
 	int i;
