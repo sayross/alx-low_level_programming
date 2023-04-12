@@ -18,7 +18,6 @@ int main(int argc, char **argv)
 	if (atoi(argv[1]) < 0)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
 	if (atoi(argv[1]) >= 0)
 	{
@@ -31,7 +30,7 @@ int main(int argc, char **argv)
 		count = count + r;
 		r = (((c % 25) % 10) % 5) / 2;
 		count = count + r;
-		if ((c % 2) == 1)
+		if (((((c % 25) % 10) % 5) % 2) == 1)
 		{
 			count += 1;
 		}
