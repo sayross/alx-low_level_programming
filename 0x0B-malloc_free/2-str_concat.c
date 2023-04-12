@@ -23,17 +23,11 @@ char *str_concat(char *s1, char *s2)
 	if (t == 0 || (s1 == 0 && s2 == 0))
 		return (0);
 	if (s1 == 0)
-	{
-		t = s1;
-		return (t);
-	}
-	if (s2 == 0)
-	{
-		t = s2;
-		return (t);
-	}
+		s1 = '\0';
 	for (i = 0; i < size1; i++)
 		t[i] = s1[i];
+	if (s2 == 0)
+		s2 = '\0';
 	for (i = 0; i < size2; i++)
 		t[i + size1] = s2[i];
 	return (t);
