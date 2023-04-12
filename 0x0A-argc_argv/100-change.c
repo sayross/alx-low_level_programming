@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 	if (atoi(argv[1]) < 0)
 	{
 		printf("%d\n", 0);
+		return (0);
 	}
 	if (atoi(argv[1]) >= 0)
 	{
