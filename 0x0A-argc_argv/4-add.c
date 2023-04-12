@@ -12,6 +12,8 @@ int main(int argc, char **argv)
 {
 	int i;
 	int sum = 0;
+	char *p;
+	int n;
 
 	if (argc == 1)
 	{
@@ -21,14 +23,15 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) == 0 && isdigit(argv[i]) == 0)
+			n = strtol(argv[i], &p, 10);
+			if (*p != '\0')
 			{
 				printf("Error\n");
 				return (1);
 			}
 			else
 			{
-				sum += atoi(argv[i]);
+				sum += n;
 			}
 		}
 		printf("%d\n", sum);
