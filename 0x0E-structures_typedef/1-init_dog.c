@@ -1,14 +1,13 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
   * init_dog - initialize a variable of type struct dog
   * @d: variable of type struct dog
-  * @name: name
-  * @age: age
-  * @owner: owner
-  * Return: void
+  * @name: name of dog
+  * @age: age of dog
+  * @owner: owner of dog
+  * Return: void always
   */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
@@ -17,7 +16,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		return;
 	}
-	strcpy(d->name, name);
+	d->name = name;
 	d->age = age;
-	strcpy(d->owner, owner);
+	owner = owner;
 }
