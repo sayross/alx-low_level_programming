@@ -17,7 +17,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		return;
 	}
-	strcpy(d->nam, name);
+	strcpy(d->name, name);
 	d->age = age;
 	strcpy(d->owner, owner);
 }
