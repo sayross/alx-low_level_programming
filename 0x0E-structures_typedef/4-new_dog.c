@@ -13,7 +13,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i, l1, l2;
+	int l1, l2;
 
 	dog_t *dog i;
 	l1 = strlen(name);
