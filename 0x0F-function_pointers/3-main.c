@@ -5,10 +5,8 @@
 
 /**
   * main - performs simple operations
-  * @num1: number 1
-  * @num2: number 2
-  * @operator: operator
-  * @calc: result
+  * @argv: arguments
+  * @argc: number of arguments
   * Return: result
   */
 
