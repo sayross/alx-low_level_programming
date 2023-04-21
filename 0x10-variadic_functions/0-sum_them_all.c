@@ -10,7 +10,8 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	var_list list;
-	unsigned int i, sum = 0;
+	unsigned int i;
+	int sum;
 
 	var_start(list, n);
 
