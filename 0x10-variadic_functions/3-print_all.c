@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", sep, va_arg(list, double));
+					printf("%s%f", sep, va_arg(list, float));
 					break;
 				case 's':
 					str = va_arg(list, char *);
