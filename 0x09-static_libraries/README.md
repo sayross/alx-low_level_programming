@@ -1,2 +1,0 @@
-README File
-Static libraries
